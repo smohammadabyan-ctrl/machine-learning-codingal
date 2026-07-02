@@ -1,0 +1,46 @@
+import turtle 
+screen = turtle.Screen()
+screen.bgcolor("black")
+screen.title("Neon Mandala")
+
+Abyan = turtle.Turtle()
+Abyan.speed("fastest")
+Abyan.hideturtle()
+
+colors = ["red", "orange", "yellow", "lime", "cyan", "violet", "pink", "white"]
+for i in range(80):
+  Abyan.color(colors[i % len(colors)])
+  Abyan.width(2)
+  Abyan.forward(i * 2)
+  Abyan.right(91)
+
+Abyan.penup()
+Abyan.goto(0, -60)
+Abyan.setheading(90)
+Abyan.pendown()
+
+Abyan.color("gold", "yellow")
+Abyan.begin_fill()
+
+for i in range(5):
+  Abyan.forward(130)
+  Abyan.right(144)
+Abyan.end_fill()
+
+Abyan.penup()
+Abyan.goto(0, 0)
+Abyan.pendown()
+
+petal_colors = ["cyan", "lime", "violet", "orange", "deeppink"]
+for i in range(36):
+  Abyan.color(petal_colors[i % len(petal_colors)],
+              petal_colors[(i + 2) % len(petal_colors)]
+            )
+  Abyan.begin_fill()
+  for j in range(4):
+    Abyan.forward(55)
+    Abyan.right(90) 
+  Abyan.end_fill()
+  Abyan.right(10)
+
+turtle.done()

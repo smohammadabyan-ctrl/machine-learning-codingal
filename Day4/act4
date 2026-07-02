@@ -1,0 +1,27 @@
+names = ["abyan","mimo","zayan","umair"]
+print(names[0])
+print(names[3])
+print(names[1])
+print(names[2])
+print(names[-2])
+print(names[-1])
+print(names[-3])
+ablist=["abyan story teller","false","need nitendo switch2","upgrade on consoles"]
+print(ablist)
+numbers = [1,2,5,10,3,4,6,9,8,7]
+numbers.sort()
+print(numbers)
+numbers.sort(reverse=True)
+print(numbers)
+
+numbers.append(12)
+print(numbers)
+
+numbers.pop()
+print(numbers)
+mygamingstory={"first console":"laptop","second console":"psp or playstation portable","third console":"xbox 360","fourth console":"ps 4"}
+print(mygamingstory["first console"])
+print(mygamingstory["fourth console"])
+
+mygamingstory["second console"] ="xbox"
+print(mygamingstory)

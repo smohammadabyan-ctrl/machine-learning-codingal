@@ -1,0 +1,13 @@
+def split(name):
+ x=0
+ flag=False
+ while flag==False and x<len(name):
+  if name[x]==" ":
+   value=name[0:x]+name[x+1:len(name)]
+   flag=True                                          
+  else:
+    x=x+1
+ return value
+name1=input("enter your name")
+result=split(name1)
+print(result)
